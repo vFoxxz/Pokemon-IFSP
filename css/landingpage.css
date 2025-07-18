@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'londrina-regular';
+    src: url('../fonts/LondrinaSolid-Regular.ttf');
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #000000;
+}
+header{
+    background-color: #B20E0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeheader{
+    margin: 5px;
+    width: 68px;
+    height: 70px;
+}
+
+.faixa-principal{
+    background-image: url('../img/fundoLanding.png');
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    h1{
+        color: white;
+    }
+
+    .introducao{
+        
+        h1 {
+                color: #fff;
+                font-family: 'londrina-regular';
+                line-height: 5rem;
+                font-size: 6rem;
+                font-weight: 400;
+                width: 40rem;
+
+
+            }
+            width: 46vw;    
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            height: 40rem;
+            padding: 10rem 0rem;
+    }
+}
