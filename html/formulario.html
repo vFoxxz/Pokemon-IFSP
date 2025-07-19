@@ -8,71 +8,92 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid" id="bodytodo">
-        <nav class="navbar custom-navbar" >
-        <div class="container-fluid d-flex justify-content-center align-items-start position-relative">
-            <button class="navbar-toggler custom-navbar pokeball-button" type="button" data-bs-toggle="collapse" data-bs-target="#menuPokemon">
-                <img src="../img/pokeHeader.png" width="70%" alt="">
-            </button>
-            <div class="navbar-collapse collapse" id="menuPokemon">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="../html/LandingPage.html" class="nav-link">Página inicial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Jogos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Animes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Tipos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Sobre nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../html/formulario.html" class="nav-link">Sugestões</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-        <form class="formulario">
-            <div class="coluna-esquerda">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Digite seu Nome:">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Digite seu Email:">
-
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" placeholder="Digite sua Idade:">
-
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" placeholder="Digite seu Telefone:">
-            </div>
-
-            <div class="coluna-direita">
-                <div class="sugestao">
-                <label for="sugestao">Sugestões para o site:</label>
-                <textarea id="sugestao" placeholder="Digite sua sugestão:"></textarea>
-                </div>
-                <button type="submit" class="botao-enviar">
-                    Enviar
-                    <img src="../img/pokebolapixel.png" alt="Pokebola" class="icone-botao">
-                </button>
-            </div>
-        </form>
-
-
-        <footer>
-            <h3>© Todos os direitos reservados. POKÉMON | IFSP - 2025</h2>
-        </footer>
     
+        <div class="container-fluid" id="bodytodo">
+            <header>
+                <nav class="navbar custom-navbar" >
+                    <div class="container-fluid d-flex justify-content-center align-items-start position-relative">
+                        <button class="navbar-toggler custom-navbar pokeball-button" type="button" data-bs-toggle="collapse" data-bs-target="#menuPokemon">
+                            <img src="../img/pokeHeader.png" width="70%" alt="">
+                        </button>
+                            <div class="navbar-collapse collapse" id="menuPokemon">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="../html/LandingPage.html" class="nav-link">Página inicial</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/historia.html" class="nav-link">História</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Jogos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Animes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Tipos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Sobre nós</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                    </div>
+                </nav>
+            </header>
 
-    </div>
+
+            <main>
+                <h1>Sugestões para o site!</h1>
+                <form class="formulario">
+                    
+                    <div class="coluna-esquerda">
+                        <div class="caixinha">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" placeholder="Digite seu Nome:">
+                        </div>
+                        <div class="caixinha">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Digite seu Email:">
+                        </div>
+
+                        <div class="caixinha">
+                            <label for="idade">Idade:</label>
+                            <input type="number" id="idade" placeholder="Digite sua Idade:">
+                        </div>
+
+                        <div class="caixinha">
+                            <label for="telefone">Telefone:</label>
+                            <input type="text" id="telefone" placeholder="Digite seu Telefone:">
+                        </div>
+                    </div>
+
+                    <div class="coluna-direita">
+                        <div class="sugestao">
+                            <label for="sugestao">Sugestões para o site:</label>
+                            <textarea id="sugestao" placeholder="Digite sua sugestão:"></textarea>
+                        </div>
+                        
+                        <div class="botao-wrapper">
+                            <button type="submit" class="botao-enviar">
+                            Enviar
+                            <img src="../img/pokebolapixel.png" alt="Pokebola" class="icone-botao">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <img src="../img/greninja.png"/>
+            </main>
+
+            <footer>
+                <h3>© Todos os direitos reservados. POKÉMON | IFSP - 2025</h2>
+            </footer>
+        
+
+        </div>
+        
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
