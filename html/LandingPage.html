@@ -5,71 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="../css/landingpage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <img class="pokeheader" src="../img/pokeHeader.png"/>
-    </header>
+
     
-
-
-    <section class="faixa-principal">
-        <div class="introducao">
-            <h1>Treine, Batalhe <br><br> e Conquiste!</h1>
-
-            <div class="mestre-introducao">
-                <h2>Torne-se um mestre</h2>
-                <img class="logo-pokemon" src="../img/pokemon-logo.png"/>
+<div class="container-fluid" id="bodytodo">
+    <nav class="navbar custom-navbar" >
+        <div class="container-fluid d-flex justify-content-center align-items-start position-relative">
+            <button class="navbar-toggler custom-navbar pokeball-button" type="button" data-bs-toggle="collapse" data-bs-target="#menuPokemon">
+                <img src="../img/pokeHeader.png" width="70%" alt="">
+            </button>
+            <div class="navbar-collapse collapse" id="menuPokemon">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../html/historia.html" class="nav-link">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Animes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Tipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/formulario.html" class="nav-link">Sugestões</a>
+                    </li>
+                </ul>
             </div>
-
-            <button>Eu escolho você!</button>
         </div>
-    </section>
+    </nav>
+        
+        <section class="faixa-principal">
+            <div class="introducao">
+                <h1>Treine, Batalhe <br><br> e Conquiste!</h1>
 
-    <section class="curiosidade">
-    
-            <h1>O que é Pokémon?</h1>
+                <div class="mestre-introducao">
+                    <h2>Torne-se um mestre</h2>
+                    <img class="logo-pokemon" src="../img/pokemon-logo.png"/>
+                </div>
 
-            <div class="texto-curiosidade">
-                <p>Pokémon é uma franquia japonesa criada em 1996 que gira em torno de criaturas chamadas “Pokémon”, que podem ser capturadas, treinadas e usadas em batalhas por treinadores. <br><br>
-                Ela começou com jogos para videogame, mas logo se expandiu para desenhos animados, filmes, cartas colecionáveis e brinquedos. O universo Pokémon valoriza aventura, amizade e estratégia, sendo uma das franquias mais populares do mundo.</p>
-
-                <img src="../img/lucario.png"/>
+                <button>Eu escolho você!</button>
             </div>
+        </section>
 
-    </section>
+        <section class="curiosidade">
+        
+                <h1>O que é Pokémon?</h1>
 
-    <div class="faixa-iniciais">
-        <h1>Conheça os pokémons iniciais!</h1>
-    </div>
-    
-    <section class="iniciais">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia voluptatibus assumenda, animi minima placeat facere quo vitae quas officiis ad adipisci corporis id vero cum cumque exercitationem. Veritatis, explicabo?
-        Dolore nemo, architecto harum in, doloribus eveniet facilis fugit veniam assumenda officiis illo labore eius asperiores nam quaerat libero ex? Omnis repellat eveniet consequuntur minus. Dolore laboriosam quam molestiae odio?
-        Atque soluta provident harum, iste accusantium, quam ea, dolor incidunt debitis culpa aliquid praesentium enim magni veniam molestiae vel voluptatem labore ab adipisci eligendi. Labore esse sit rem nemo velit?</p>
-    </section>
+                <div class="texto-curiosidade">
+                    <p>Pokémon é uma franquia japonesa criada em 1996 que gira em torno de criaturas chamadas “Pokémon”, que podem ser capturadas, treinadas e usadas em batalhas por treinadores. <br><br>
+                    Ela começou com jogos para videogame, mas logo se expandiu para desenhos animados, filmes, cartas colecionáveis e brinquedos. O universo Pokémon valoriza aventura, amizade e estratégia, sendo uma das franquias mais populares do mundo.</p>
 
-    <hr color="#B20E0E">
+                    <img src="../img/lucario.png"/>
+                </div>
 
-    <section class="origem">
-    
-            <h1>De onde vem o nome Pokémon?</h1>
+        </section>
 
-            <div class="texto-origem">
+        <div class="faixa-iniciais">
+            <h1>Conheça os pokémons iniciais!</h1>
+        </div>
+        
+        <section class="iniciais">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia voluptatibus assumenda, animi minima placeat facere quo vitae quas officiis ad adipisci corporis id vero cum cumque exercitationem. Veritatis, explicabo?
+            Dolore nemo, architecto harum in, doloribus eveniet facilis fugit veniam assumenda officiis illo labore eius asperiores nam quaerat libero ex? Omnis repellat eveniet consequuntur minus. Dolore laboriosam quam molestiae odio?
+            Atque soluta provident harum, iste accusantium, quam ea, dolor incidunt debitis culpa aliquid praesentium enim magni veniam molestiae vel voluptatem labore ab adipisci eligendi. Labore esse sit rem nemo velit?</p>
+        </section>
 
-                <img src="../img/gengar.png"/>
+        <hr color="#B20E0E" class="opacity-100">
 
-                <p>A palavra Pokémon é a abreviação de Pocket Monsters, que significa “monstros de bolso”. Ela representa criaturas fantásticas que podem ser capturadas, guardadas em Pokébolas e treinadas por humanos para viver aventuras e batalhas.<br><br>
-                Cada Pokémon possui tipos, habilidades e personalidades únicas, fazendo parte de um universo rico em amizade, estratégia e descobertas.</p> 
+        <section class="origem">
+        
+                <h1>De onde vem o nome Pokémon?</h1>
 
-                
-            </div>
+                <div class="texto-origem">
 
-    </section>
+                    <img src="../img/gengar.png"/>
 
-    <footer>
-        <h3>© Todos os direitos reservados. POKÉMON | IFSP - 2025</h2>
-    </footer>
+                    <p>A palavra Pokémon é a abreviação de Pocket Monsters, que significa “monstros de bolso”. Ela representa criaturas fantásticas que podem ser capturadas, guardadas em Pokébolas e treinadas por humanos para viver aventuras e batalhas.<br><br>
+                    Cada Pokémon possui tipos, habilidades e personalidades únicas, fazendo parte de um universo rico em amizade, estratégia e descobertas.</p> 
+
+                    
+                </div>
+
+        </section>
+
+        <footer>
+            <h3>© Todos os direitos reservados. POKÉMON | IFSP - 2025</h2>
+        </footer>
+
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 </body>
 </html>
 

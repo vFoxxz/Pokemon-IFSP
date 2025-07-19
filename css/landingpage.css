@@ -18,21 +18,9 @@
     margin: 0;
 }
 
-body{
-    background-color: #000000;
-}
-header{
-    background-color: #B20E0E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.pokeheader{
-    margin: 5px;
-    width: 68px;
-    height: 70px;
-}
+
+
 
 .faixa-principal{
     background-image: url('../img/fundoLanding.png');
@@ -46,6 +34,7 @@ header{
     border-bottom: 5px solid #B20E0E;
     height: 53rem;
     box-sizing: border-box;
+    
 
     h1{
         color: white;
@@ -58,9 +47,7 @@ header{
         text-align: center;
         flex-direction: column;
         height: 40rem;
-        padding: 10rem 0rem;
-        margin-top: 4rem;
-        
+        padding-top: 5rem;
 
         h1 {
                 color: #fff;
@@ -107,9 +94,7 @@ header{
             
     }
 
-    hr{
-        color: #B20E0E;
-    }
+   
 }
 
 
@@ -225,4 +210,57 @@ hr{
     }
 
 
+}
+
+.custom-navbar {
+  background-color: #B20E0E;
+  position: relative;
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ddd !important; /* opcional para hover */
+}
+
+.navbar{
+    .container-fluid{
+        background-color: #B20E0E;
+    }
+
+    #menuPokemon{
+        font-family: 'londrina-light';
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* Estado normal: borda fininha */
+.pokeball-button {
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.pokeball-button:focus,
+.pokeball-button:active {
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  outline: none;
+}
+
+
+
+
+#bodytodo{
+    background-color: #000000;
+    width: 100%;
+    padding: 0px;
 }

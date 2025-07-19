@@ -10,16 +10,7 @@
     font-family: "londrina-light";
     src: url("../fonts/LondrinaSolid-Light.ttf");
 }
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "londrina-light";
-    background: #2d2d2d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+
 
 .formulario {
     display: flex;
@@ -28,14 +19,6 @@ body {
     color: white;
 }
 
-.container {
-    width: 100%;
-    padding: 30px;
-    background-color: #000;
-    border-top: 10px solid red;
-    border-bottom: 10px solid red;
-    box-sizing: border-box;
-}
 
 
 .coluna-esquerda {
@@ -161,5 +144,69 @@ textarea {
     .icone-botao {
         width: 18px;
         height: 18px;
+    }
+}
+
+
+.custom-navbar {
+  background-color: #B20E0E;
+  position: relative;
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ddd !important; /* opcional para hover */
+}
+
+.navbar{
+    .container-fluid{
+        background-color: #B20E0E;
+    }
+
+    #menuPokemon{
+        font-family: 'londrina-light';
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* Estado normal: borda fininha */
+.pokeball-button {
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.pokeball-button:focus,
+.pokeball-button:active {
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  outline: none;
+}
+
+
+#bodytodo{
+    background-color: #000000;
+    width: 100%;
+    padding: 0px;
+}
+
+footer{
+    background-color: #B20E0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3{
+        color: white;
+        font-family: 'londrina-light';
+        padding: 10px;
     }
 }
