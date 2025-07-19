@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "londrina-regular";
+    src: url("../fonts/LondrinaSolid-Regular.ttf");
+}
+@font-face {
+    font-family: "londrina-black";
+    src: url("../fonts/LondrinaSolid-Black.ttf");
+}
+@font-face {
+    font-family: "londrina-light";
+    src: url("../fonts/LondrinaSolid-Light.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "londrina-light";
+    background-color: #2d2d2d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.container {
+    background-color: #000;
+    border-top: 10px solid red;
+    border-bottom: 10px solid red;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo img {
+    width: 40px;
+}
+
+.titulo h1 {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    color: white;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid red;
+    margin: 25px 0;
+}
+
+.sessao h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.conteudo img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.conteudo p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.origem {
+    flex-direction: row;
+}
+
+.origem img {
+    width: 160px;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .conteudo img {
+        width: 120px;
+        margin-bottom: 15px;
+    }
+
+    .conteudo p {
+        font-size: 15px;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+    }
+
+    .sessao h2 {
+        font-size: 20px;
+    }
+
+    .origem {
+        flex-direction: column; /* quebra o layout horizontal */
+    }
+
+    .origem img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo img {
+        width: 30px;
+    }
+
+    .conteudo img {
+        width: 100px;
+    }
+
+    .conteudo p {
+        font-size: 14px;
+    }
+
+    .titulo h1 {
+        font-size: 20px;
+    }
+
+    .sessao h2 {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
