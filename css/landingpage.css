@@ -7,6 +7,11 @@
     src: url('../fonts/LondrinaSolid-Black.ttf');
 }
 
+@font-face {
+    font-family: 'londrina-light';
+    src: url('../fonts/LondrinaSolid-Light.ttf');
+}
+
 
 
 *{
@@ -31,25 +36,31 @@ header{
 
 .faixa-principal{
     background-image: url('../img/fundoLanding.png');
-    width: 100%;
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    border-bottom: 5px solid #B20E0E;
+    height: 53rem;
+    box-sizing: border-box;
 
     h1{
         color: white;
     }
 
     .introducao{
-
         width: 46vw;    
         align-items: center;
+        justify-content: center;
         text-align: center;
         flex-direction: column;
         height: 40rem;
         padding: 10rem 0rem;
+        margin-top: 4rem;
+        
 
         h1 {
                 color: #fff;
@@ -74,7 +85,7 @@ header{
                 font-weight: 400;
             }
 
-            img{
+            .logo-pokemon{
                 width: 11.6rem;
                 height: 5rem;
             }
@@ -103,10 +114,6 @@ header{
 
 
 
-
-
-
-
 footer{
     background-color: #B20E0E;
     display: flex;
@@ -114,7 +121,108 @@ footer{
     align-items: center;
     h3{
         color: white;
-        font-family: 'londrina-regular';
+        font-family: 'londrina-light';
         padding: 10px;
     }
+}
+
+.curiosidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    h1{
+        margin-top: 1rem;
+        color: white;
+        font-family: 'londrina-regular';
+        padding: 10px;
+        font-size: 4rem;
+        font-weight: 200;
+        padding-bottom: 3rem;
+    }
+
+    p{
+        color: white;
+        font-family: 'londrina-regular';
+        font-size: 3rem;
+        width: 100vh;
+        text-align: center;
+    }
+
+    .texto-curiosidade{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        img{
+            padding-left: 6rem;
+        }
+    }
+
+
+}
+
+.faixa-iniciais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B20E0E;
+    h1{
+        color: white;
+        font-family: 'londrina-regular';
+        font-weight: 200;
+        padding: 1rem;
+        font-size: 4rem;
+    }
+}
+
+.iniciais{
+    p{
+        color: white;
+        font-family: 'londrina-regular';
+        margin: 3rem;
+    }
+}
+
+hr{
+    height: 6px;
+}
+
+
+.origem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    h1{
+        margin-top: 1rem;
+        color: white;
+        font-family: 'londrina-regular';
+        padding: 10px;
+        font-size: 4rem;
+        font-weight: 200;
+        padding-bottom: 3rem;
+    }
+
+    p{
+        color: white;
+        font-family: 'londrina-regular';
+        font-size: 3rem;
+        width: 100vh;
+        text-align: center;
+    }
+
+    .texto-origem{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        img{
+            padding-right: 6rem;
+        }
+    }
+
+
 }
