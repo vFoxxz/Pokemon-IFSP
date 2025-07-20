@@ -12,10 +12,6 @@
     src: url('../fonts/LondrinaSolid-Light.ttf');
 }
 
-body {
-    background-color: black;
-
-}
 
 h1{
     color: white;
@@ -43,19 +39,8 @@ p{
     font-family: 'londrina-regular';
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 20px;
-  background-color: #000; /* fundo escuro como na imagem */
-  color: white;
-  justify-content: space-around;
-}
 
-.gameboy img{
-    
-}
+
 
 
 
@@ -66,14 +51,84 @@ p{
   margin: 30px 0;
 }
 
+.custom-navbar {
+  background-color: #B20E0E;
+  position: relative;
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ddd !important; /* opcional para hover */
+}
+
+.navbar{
+    .container-fluid{
+        background-color: #B20E0E;
+    }
+
+    #menuPokemon{
+        font-family: 'londrina-light';
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+
+/*CSS DA HEADER E DO RODAPE*/
+
+.navbar-nav {
+  text-align: center;
+}
+
+
+.pokeball-button {
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.pokeball-button:focus,
+.pokeball-button:active {
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  outline: none;
+}
+
+
+#bodytodo{
+    background-color: #000000;
+    width: 100%;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+main{
+    flex: 1;
+}
+
 footer{
     background-color: #B20E0E;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     h3{
         color: white;
         font-family: 'londrina-light';
         padding: 10px;
     }
 }
+
+
+header{
+    width: 100%;
+}
+
