@@ -91,3 +91,66 @@ footer{
         padding: 10px;
     }
 }
+
+/* ----------- SOBRE NÓS ----------- */
+
+.sobre-nos {
+    font-family: 'londrina-regular';
+    color: white;
+}
+
+.titulo-sobre {
+    font-family: 'londrina-black';
+    color: #B20E0E;
+    font-size: 3rem;
+}
+
+.subtitulo-sobre {
+    font-size: 1.2rem;
+    font-family: 'londrina-light';
+}
+
+.img-jogador {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #707070;
+}
+
+.nome-jogador {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-family: 'londrina-black';
+}
+
+.tipo-eletrico {
+    color: #812525;
+}
+
+.tipo-fogo {
+    color: #112070;
+}
+
+.tipo-planta {
+    color: #356e14;
+}
+
+.descricao-jogador {
+    font-size: 1rem;
+    font-family: 'londrina-light';
+    padding: 0 15px;
+}
+
+.texto-final {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    font-family: 'londrina-light';
+}
+
+.frase-final {
+    font-weight: 'londrina-regular';
+    color: #B20E0E;
+    font-family: 'londrina-regular';
+    margin-top: 10px;
+}
