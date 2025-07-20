@@ -11,8 +11,11 @@
     src: url("../fonts/LondrinaSolid-Light.ttf");
 }
 
-
-
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'londrina-regular';
+}
 
 label {
     margin-bottom: 5px;
@@ -20,12 +23,19 @@ label {
     font-family: "londrina-light";
 }
 
+input, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
 
-
-.sugestao textarea {
+textarea {
     height: 15vh;
     border-radius: 10px;
-    outline: none;
 }
 
 .botao-enviar {
@@ -36,11 +46,11 @@ label {
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
-    align-self: flex-start;
     display: flex;
     align-items: center;
     gap: 10px;
     transition: background-color 0.3s ease;
+    align-self: flex-start;
 }
 
 .botao-enviar:hover {
@@ -51,214 +61,161 @@ label {
     width: 20px;
     height: 20px;
 }
+
+.custom-navbar {
+    background-color: #B20E0E;
+    position: relative;
+}
+
+.custom-navbar .nav-link {
+    color: white !important;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ddd !important;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.pokeball-button {
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    transition: border 0.2s ease;
+}
+
+.pokeball-button:focus,
+.pokeball-button:active {
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    outline: none;
+}
+
+#bodytodo {
+    background-color: #000000;
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+main h1 {
+    margin-top: 2rem;
+    font-family: 'londrina-regular';
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+img {
+    width: 25vh;
+    max-width: 100%;
+}
+
+.coluna-esquerda, .coluna-direita {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 48%;
+}
+
+.caixinha input {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coluna-direita label {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.botao-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.sugestao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer {
+    background-color: #B20E0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    color: white;
+    font-family: 'londrina-light';
+    padding: 10px;
+}
+
+
 @media (max-width: 768px) {
     .formulario {
-        display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
     }
 
     .coluna-esquerda, .coluna-direita {
         width: 100%;
+        padding: 0;
     }
 
-    .coluna-direita {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .coluna-direita label {
-        width: 100%;
-        margin-bottom: 10px;
+    .botao-enviar {
+        align-self: flex-end;
+        font-size: 16px;
+        padding: 12px 20px;
     }
 
     textarea {
         width: 100%;
     }
-
-    input, textarea {
-        font-size: 15px;
-        width: 100%;
-    }
-
-    .botao-enviar {
-        align-self: flex-end;
-        padding: 14px 26px;
-        font-size: 17px;
-    }
 }
 
 @media (max-width: 480px) {
-    .formulario {
-        padding: 10px;
-    }
-
     input, textarea {
         font-size: 14px;
         padding: 8px;
     }
 
     .botao-enviar {
-        font-size: 16px;
-        padding: 12px 20px;
+        font-size: 15px;
+        padding: 10px 18px;
     }
 
     .icone-botao {
         width: 18px;
         height: 18px;
     }
-}
 
-
-.custom-navbar {
-  background-color: #B20E0E;
-  position: relative;
-}
-
-.custom-navbar .nav-link {
-  color: white !important;
-}
-
-.custom-navbar .nav-link:hover {
-  color: #ddd !important; /* opcional para hover */
-}
-
-.navbar{
-    .container-fluid{
-        background-color: #B20E0E;
-    }
-
-    #menuPokemon{
-        font-family: 'londrina-light';
-        font-size: 1.5rem;
-    }
-
-    
-}
-
-
-/*CSS DA HEADER E DO RODAPE*/
-
-.navbar-nav {
-  text-align: center;
-}
-
-
-.pokeball-button {
-  border: 0.5px solid rgba(0, 0, 0, 0.3);
-  background: transparent;
-  outline: none;
-  transition: border 0.2s ease;
-}
-
-.pokeball-button:focus,
-.pokeball-button:active {
-  border: 1px solid rgba(0, 0, 0, 0.01);
-  outline: none;
-}
-
-
-#bodytodo{
-    background-color: #000000;
-    width: 100%;
-    padding: 0px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-main{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-family: 'londrina-regular';
-
-    h1{
-        margin-top: 2rem;
-    }
-
-    .formulario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50vh;
-    color: white;
-    flex-direction: row;
-    box-sizing: border-box;
-
-}
-
-img{
-    width: 25vh;
-}
-
-
-
-    .coluna-esquerda {
-        display: flex;
-        flex-direction: column;
-        width: 48%;
-        margin-left: 2rem;
-        box-sizing: border-box;
-    }
-
-    .caixinha input {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        font-size: 14px;
-        width: 80vh;
-        outline: none;
-}
-
-    .coluna-direita {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-            label{
-            width: 30rem;
-            }
-        box-sizing: border-box;
-
-        .botao-wrapper {
-        display: flex;
-        align-items: center; 
-        margin-left: 20px;
-        }
-        
-
-    }
-
-    button{
-        margin: 15px;
-    }
-
-    .sugestao{
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
-
-
-footer{
-    background-color: #B20E0E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h3{
-        color: white;
-        font-family: 'londrina-light';
-        padding: 10px;
+    img {
+        width: 20vh;
     }
 }
