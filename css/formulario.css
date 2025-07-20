@@ -165,6 +165,10 @@ img{
     margin-top: 1rem;
 }
 
+.botao-wrapper img{
+    width: 30px;
+}
+
 .sugestao {
     display: flex;
     flex-direction: column;
