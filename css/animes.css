@@ -25,9 +25,8 @@ h1, h2{
     text-align: center;
 }
 
-li{
-    font-family: 'londrina-regular';
-}
+
+
 
 
 
@@ -77,8 +76,9 @@ hr{
     }
 
     #menuPokemon{
-        font-family: 'londrina-light';
+        font-family: 'londrina-light' !important;
         font-size: 1.5rem;
+        font-weight: 200;
     }
 
     
@@ -154,14 +154,17 @@ footer h3 {
         padding: 0 10px;
     }
 
-    
-    li {
+    main {
+        li {
         font-size: 1rem;
         padding: 0 10px;
         text-align: center;
         list-style-position:inside;
-        margin-right: 10px !important;
+        margin-right: 40px !important;
     }
+    }
+    
+    
 
     footer {
         flex-direction: column;
@@ -175,14 +178,13 @@ footer h3 {
     }
 
     .custom-navbar .nav-link {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #menuPokemon {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
-
 
 
 

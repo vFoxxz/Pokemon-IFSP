@@ -36,6 +36,7 @@ input, textarea {
 textarea {
     height: 15vh;
     border-radius: 10px;
+    font-family: 'londrina-regular';
 }
 
 .botao-enviar {
@@ -155,6 +156,10 @@ img{
     justify-content: center;
 }
 
+.coluna-direita textarea{
+    font-family: 'londrina-light';
+}
+
 .coluna-direita label {
     margin-bottom: 10px;
     width: 100%;
@@ -164,6 +169,7 @@ img{
     display: flex;
     align-items: center;
     margin-top: 1rem;
+    font-family: 'londrina-light';
 }
 
 .botao-wrapper img{
