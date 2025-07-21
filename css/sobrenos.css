@@ -125,18 +125,20 @@ footer{
     margin-top: 15px;
     font-size: 1.5rem;
     font-family: 'londrina-black';
+    color: white;
+    -webkit-text-stroke-width: 1.2px;
 }
 
 .tipo-eletrico {
-    color: #812525;
+    -webkit-text-stroke-color: #812525;
 }
 
 .tipo-fogo {
-    color: #112070;
+    -webkit-text-stroke-color: #112070;
 }
 
 .tipo-planta {
-    color: #356e14;
+    -webkit-text-stroke-color: #356e14;
 }
 
 .descricao-jogador {
@@ -157,3 +159,17 @@ footer{
     font-family: 'londrina-regular';
     margin-top: 10px;
 }
+
+/*Pokebola Girar */
+
+.pokebola {
+      cursor: pointer;
+      transition: transform 1s;
+    }
+
+    .spin-cw  { 
+      transform:rotate( 360deg); 
+    }
+    .spin-ccw { 
+      transform:rotate(-360deg); 
+    }

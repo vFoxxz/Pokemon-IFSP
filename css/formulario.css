@@ -19,8 +19,8 @@ body {
 
 label {
     margin-bottom: 5px;
-    font-weight: bold;
-    font-family: "londrina-light";
+    font-weight: 300;
+    font-family: "londrina-regular";
 }
 
 input, textarea {
@@ -146,6 +146,7 @@ img{
 .caixinha input {
     margin-bottom: 20px;
     font-size: 14px;
+    font-family: 'londrina-light';
 }
 
 .coluna-direita {
@@ -233,3 +234,18 @@ footer h3 {
         width: 20vh;
     }
 }
+
+
+/*Pokebola Girar */
+
+.pokebola {
+      cursor: pointer;
+      transition: transform 1s;
+    }
+
+    .spin-cw  { 
+      transform:rotate( 360deg); 
+    }
+    .spin-ccw { 
+      transform:rotate(-360deg); 
+    }

@@ -213,3 +213,17 @@ footer{
         padding: 10px;
     }
 }
+
+/*Pokebola Girar */
+
+.pokebola {
+      cursor: pointer;
+      transition: transform 1s;
+    }
+
+    .spin-cw  { 
+      transform:rotate( 360deg); 
+    }
+    .spin-ccw { 
+      transform:rotate(-360deg); 
+    }
