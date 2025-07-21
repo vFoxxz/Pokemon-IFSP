@@ -77,6 +77,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 main{
@@ -86,6 +87,11 @@ main{
     align-items: center;
     font-family: 'londrina-regular';
 
+
+    .tabela table td img {
+    max-width: 50px;
+    height: auto;
+}
         h1{
             color: white;
             margin-top: 2rem;
@@ -116,6 +122,8 @@ main{
             font-size: 2rem;
             border: 2px solid #d32f2f;
             padding: 10px;
+            overflow-x: auto;
+            width: 100%;
             border-radius: 8px;
             background-color: #000000; 
             box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); 
@@ -123,7 +131,9 @@ main{
             table{
                 font-family: 'londrina-light';
                 border-collapse: collapse;
-                width: 100vh;
+                width: 100%;
+                max-width: 100%;
+                overflow-x: auto;
                 table-layout: fixed;
 
                 
@@ -245,10 +255,12 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     h3{
         color: white;
         font-family: 'londrina-light';
         padding: 10px;
+
     }
 }
 
@@ -264,24 +276,30 @@ footer{
 }
 
 .card img {
-  max-width: 50%;
-  max-height: 35%;
+  width: 100%;
+  max-width: 80px;
+  height: 80px !important;
+  margin: auto;
+  display: block;
   margin: 10px;
 }
 
 .card {
   margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: none;
   border: none;
+  padding: 10px;
   border-radius: 0;
-  width: auto;
+  width: 100% !important;
   display: flex !important;
   align-items: center !important;
   background-color: #000000 !important;
+  white-space: nowrap;
+
 
   h5{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .card-body{
@@ -305,7 +323,7 @@ footer{
 
 section.tipos {
   position: relative;
-  min-height: 300px; 
+  padding: 0 1rem;
   width: 100%;
 }
 
@@ -313,20 +331,22 @@ section.tipos {
 .carousel-control-next {
   position: absolute;
   top: 50%;
+
   z-index: 10;
   background-color: transparent;
   border: none;
-  width: 5%;
+  width: auto;
 }
 
 .carousel-control-prev {
+  transform: translateX(-30%);
   left: 0;
 }
 
 .carousel-control-next {
   right: 0;
+  transform: translateX(30%);
 }
-
 .carousel-control-prev img,
 .carousel-control-next img {
   width: 3rem;
@@ -339,83 +359,53 @@ section.tipos {
   position: relative;
 }
 
-@media (min-width: 768px) {
-  .card img {
-    height: 11em;
-  }
-}
 
-
-@media (max-width: 768px) {
-    .cards-wrapper {
-    display: grid !important;
-    grid-template-columns: 48% 48%;
-    justify-content: center;
-    gap: 10px;
-    }
-
-    .cards-wrapper .card {
-    width: 100% !important;
-    margin: 0 auto !important;
-    }
-
-    .cards-wrapper .card:nth-child(3) {
-    grid-column: 1 / span 2;
-    justify-self: center;
-    }
-
-.carousel-control-prev,
-.carousel-control-next {
-  display: flex;
-  justify-content: center;
-
-  img{
-    width: 4rem;
-  }
-}
-
-.carousel-control-next{
-    margin-right: 10px;
-}
-.card-title {
-    font-size: 1rem;
-  }
-
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-
-.card {
-    max-width: 140px;
-  }
-
-}
 
 
 
 @media (max-width: 576px) {
-  .card {
-    max-width: 120px;
-  }
+  
 
-  .card img {
-    height: 8rem;
-    width: auto;
-  }
-
-  .card-title {
+  /*RESPONSIVIDADE TABELA */
+  .tabela table {
     font-size: 1rem;
   }
+
+  .tabela table td img{
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .tabela table .tipo-foto img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .tabela table th {
+    font-size: 1rem;
+    padding: 6px;
+  }
+
+  .tabela {
+    padding: 5px;
+  }
+
+
+  .primeiros,
+  .tres-embaixo,
+  .dois-embaixo,
+  .linha-de-icones {
+    gap: 5px !important;
+  }
+
+  .dois-embaixo, .tres-embaixo{
+    margin-top: 0 !important;
+  }
 }
 
 
-.cards-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 2rem;
-  width: 100%;
-  margin-top: 3rem;
-}
+
+
+
+
+
