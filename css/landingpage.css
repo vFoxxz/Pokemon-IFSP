@@ -300,6 +300,11 @@ section.iniciais {
   height: auto;
 }
 
+.card{
+  h5{
+    font-size: 1.5rem;
+  }
+}
 
 
 .carousel {
