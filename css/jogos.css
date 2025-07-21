@@ -102,34 +102,28 @@ header{
 /* CSS das Geraçoes e suas imagens  */
 
 
-h1{
+main{
+    background-color: #000000;
+    color: white;
+    font-family: 'londrina-regular';
     text-align: center;
-    font-family: 'londrina-black';
+    padding: 20px;
+
+    .geral{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linha{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .unidade{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-h2{
-    text-align: center;
-    font-family: 'londrina-black';
-}
-
-.linha {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 40px;
-  margin: 40px 0;
-}
-
-.jogo {
-  padding: 15px;
-  border-radius: 10px;
-  max-width: 250px;
-  text-align :center;
-  color: rgb(255, 255, 255);
-}
-
-.jogo img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
