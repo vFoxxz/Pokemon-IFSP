@@ -114,14 +114,5 @@ h2{
 }
 
 
-.gameboy {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.linha img {
-    align-self: flex-end;
-}
 
   
