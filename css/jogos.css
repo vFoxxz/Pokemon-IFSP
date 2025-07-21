@@ -12,6 +12,8 @@
     src: url('../fonts/LondrinaSolid-Light.ttf');
 }
 
+
+
 /* Linha separatória vermelha */
 hr{
     height: 2px;
@@ -77,9 +79,6 @@ hr{
     align-items: center;
 }
 
-main{
-    flex: 1;
-}
 
 footer{
     background-color: #B20E0E;
@@ -113,6 +112,24 @@ h2{
     font-family: 'londrina-black';
 }
 
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  margin: 40px 0;
+}
 
+.jogo {
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 250px;
+  text-align :center;
+  color: rgb(255, 255, 255);
+}
 
-  
+.jogo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
