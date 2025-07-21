@@ -32,10 +32,14 @@ li{
 
 
 main{
-
     h1,h2,h3, li{
         color: white;
     }
+
+    h1{
+        margin-top: 10px;
+    }
+    
     img{
     width: 20%;
     height: 20%;
@@ -138,7 +142,13 @@ footer h3 {
         width: 80%;
         height: auto;
     }
-
+    
+    main{
+        text-align: center;
+    }
+    h3{
+        padding: 10px;
+    }
        h1, h2 {
         font-size: 1.5rem;
         padding: 0 10px;
@@ -173,3 +183,14 @@ footer h3 {
 
 
 
+.pokebola {
+      cursor: pointer;
+      transition: transform 1s;
+    }
+
+    .spin-cw  { 
+      transform:rotate( 360deg); 
+    }
+    .spin-ccw { 
+      transform:rotate(-360deg); 
+    }
