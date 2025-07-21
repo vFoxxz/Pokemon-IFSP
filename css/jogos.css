@@ -149,8 +149,9 @@ main{
 
 @media (max-width: 768px){ 
 
+
   main {
-    padding: 10px;
+    padding: 10px 20px;
   }
 
   /* Imagens e blocos ficam em coluna */
@@ -158,16 +159,28 @@ main{
     flex-direction: column !important;
     gap: 40px;
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .unidade{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .unidade img {
-    width: 80% !important;
+    width: 100% !important;
     height: auto !important;
+    max-width: 400px;
+    margin: auto;
   }
 
   main h1, main h2, main h3 {
-    font-size: 1.5rem;
-    padding: 0 10px;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    line-height: 1.5;
+    
   }
 
   footer {
@@ -181,6 +194,9 @@ main{
 
   .custom-navbar .nav-link {
     font-size: 1rem;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
   }
 
   #menuPokemon {
@@ -210,16 +226,16 @@ main{
   }
 
   .unidade img {
-    width: 80% !important;
+    width: 110% !important;
     height: auto !important;
     flex-direction: column;
     align-items: center;
 
   }
 
-  main h1, main h2, main h3 {
-    font-size: 2rem;
-    padding: 0 20px;
+  main h1, main h2, main h3, main p {
+    font-size: 2.2rem;
+    padding: 0 10px;
   }
 
   footer {
@@ -232,12 +248,29 @@ main{
   }
 
   .custom-navbar .nav-link {
-    font-size: 1.2rem;
+    font-size: 3.5rem;
+    margin: 2px;
   }
 
   #menuPokemon {
     font-size: 1.4rem;
   }
+
+  header {
+      background-color: #B20E0E;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+      .custom-navbar img,
+      .pokebola {
+      width: 130px !important;
+      height: 130px !important;
+      margin-bottom: 10px;
+      }
 }
 
 
