@@ -130,3 +130,44 @@ footer h3 {
 }
 
 
+@media (max-width: 768px){
+    
+  main img {
+        width: 80%;
+        height: auto;
+    }
+
+       h1, h2 {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+
+    
+    li {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    /* Ajuste da navbar */
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .custom-navbar .nav-link {
+        font-size: 1rem;
+    }
+
+    #menuPokemon {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
