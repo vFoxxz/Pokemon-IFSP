@@ -35,14 +35,6 @@ img{
     
 }
 
-/* Alinhamento do texto */
-.alinhar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-
-}
 
 
 /* Linha separatória vermelha */

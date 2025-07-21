@@ -12,13 +12,11 @@
     src: url('../fonts/LondrinaSolid-Light.ttf');
 }
 
-
-.linha-vermelha {
-  width: 100%;
-  height: 3px;
-  background-color: red;
-  margin: 100px 0;
+/* Linha separatória vermelha */
+hr{
+    height: 2px;
 }
+
 
 .custom-navbar {
   background-color: #B20E0E;
