@@ -14,12 +14,6 @@
 
 
 
-/* Linha separatória vermelha */
-hr{
-    height: 2px;
-}
-
-
 .custom-navbar {
   background-color: #B20E0E;
   position: relative;
@@ -109,6 +103,8 @@ main{
     text-align: center;
     padding: 20px;
 
+    /* CSS das imagens */
+
     .geral{
         display: flex;
         flex-direction: column;
@@ -117,7 +113,8 @@ main{
     .linha{
         display: flex;
         flex-direction: row;
-        gap: 40px;
+        gap: 80px;
+        justify-content: space-around;
     }
 
     .unidade{
@@ -125,5 +122,18 @@ main{
         flex-direction: column;
         align-items: center;
     }
+
+    hr{
+    background-color: #B20E0E 100px !important;
+    color: #B20E0E;
+    height: 3px;
+    width: auto;
+    margin: 0;
+    }
+    
 }
+
+
+
+
 
