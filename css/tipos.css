@@ -359,7 +359,9 @@ section.tipos {
   position: relative;
 }
 
-
+.pikachu{
+  width: 5% !important;
+}
 
 
 
@@ -369,6 +371,9 @@ section.tipos {
   /*RESPONSIVIDADE TABELA */
   .tabela table {
     font-size: 1rem;
+  }
+  .pikachu{
+    width: 20% !important;
   }
 
   .tabela table td img{
@@ -404,7 +409,11 @@ section.tipos {
 }
 
 
-
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pikachu{
+    width: 10% !important;
+  }
+}
 
 
 
