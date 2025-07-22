@@ -113,7 +113,7 @@ hr{
     }
 
     .origem {
-        flex-direction: column; /* quebra o layout horizontal */
+        flex-direction: column;
     }
 
     .origem img {
@@ -157,7 +157,7 @@ hr{
 }
 
 .custom-navbar .nav-link:hover {
-  color: #ddd !important; /* opcional para hover */
+  color: #ddd !important; 
 }
 
 .navbar{
@@ -177,9 +177,8 @@ hr{
   text-align: center;
 }
 
-/* Estado normal: borda fininha */
 .pokeball-button {
-  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3) !important;
   background: transparent;
   outline: none;
   transition: border 0.2s ease;
